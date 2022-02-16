@@ -1,0 +1,97 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.imageBox {
+  height: 80vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageBox img {
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  object-position: 0 -50px;
+}
+
+h1 {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.intro p {
+  width: 90%;
+  padding: 0 0 20px 0;
+  text-align: justify;
+}
+
+.intro img {
+  width: 50%;
+}
+
+hr {
+  border-top: 1px solid gray;
+  width: 80%;
+}
+
+.ingredients {
+  display: flex;
+}
+
+h2 {
+  margin-left: 10%;
+  font-weight: lighter;
+}
+
+.list {
+    margin-left: 10%;
+}
+
+ul {
+  list-style-type: "-  ";
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cooking-info {
+  width: 40%;
+}
+
+ol {
+    counter-reset: list;
+}
+
+ol li {
+    list-style: none;
+    position: relative;
+}
+
+ol > li:before  {
+    counter-increment: list;
+    content: counter(list, decimal) ") ";
+    position: absolute;
+    left: -1.4em;
+}
